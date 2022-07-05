@@ -69,4 +69,11 @@ public class MemberController {
                             "Member with ID: '" + id + "' not found."), HttpStatus.NOT_FOUND);
         }
     }
+   @getMapping(value= "/hello)"
+    public String sayHi(){
+
+        return "say hello";
+    }
 }
+
+
