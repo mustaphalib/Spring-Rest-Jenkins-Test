@@ -27,7 +27,8 @@ public class MemberController {
         this.memberService = memberService;
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)git init
+
     public List<Member> fetchAllMembers() {
         return memberService.getAllMembers();
     }
@@ -74,6 +75,12 @@ public class MemberController {
 
         return "say hello tot my friend gtgt";
     }
+    @GetMapping(value="/hello")
+    public String sayHi(){
+
+       return "say hello";
+           }
+
 }
 
 
